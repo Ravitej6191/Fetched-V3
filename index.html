@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetched!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fetched!</h1>
+            <button id="toggleTheme" aria-label="Toggle theme">🌙</button>
+        </div>
+        <div class="search-controls">
+            <input type="text" id="searchInput" placeholder="Search for a movie or TV show..." oninput="getSuggestions(event)">
+        </div>
+        <div id="movieGrid" class="grid" aria-live="polite"></div>
+        <div id="nodata" style="display: none;">
+            <img src="assets/images/nodata.png" alt="No data" width="265" height="170">
+            <p>No results found. Try another search!</p>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
