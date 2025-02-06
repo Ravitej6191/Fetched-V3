@@ -57,7 +57,7 @@ function createCard(item, container) {
     card.onclick = () => loadMovie(item.imdbID, item.Type);
 
     const img = document.createElement("img");
-    img.src = item.Poster !== "N/A" ? item.Poster : "./Assets/Images/nodata.png";
+    img.src = item.Poster !== "N/A" ? item.Poster : "./Assets/Images/dummy.jpg";
     img.alt = `Poster for ${item.Title}`;
 
     const titleElement = document.createElement("p");
